@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .songItem {
+    // width: 250px;
+    min-width: 310px;
+    max-width: 800px;
+
+    .songHeader {
+      h1 {
+        font-weight: 300;
+      }
+
+      h3 {
+        margin-top: 0.2em;
+        font-weight: 300;
+      }
+
+      p {
+        font-weight: 300;
+        color: darkgreen;
+        margin-bottom: 0;
+      }
+    }
+
+    .songText {
+      white-space: pre-line;
+    }
+  }
+}
