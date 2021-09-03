@@ -7,22 +7,31 @@ const songItem = (song) => {
     <div key={song.title} className="songItem">
       <div className="songHeader">
         <h1 style={{ marginBottom: "0.1em" }}>{song.title}</h1>
-        <h3 style={{ marginBottom: 0 }}>{song.author}</h3>
-        <p style={{ marginTop: "0.3em" }}> Melodi: {song.original}</p>
+        <h3 style={{ marginBottom: 0 }}>Melodi: {song.original}</h3>
+        <p style={{ marginTop: "0.3em" }}>{song.author}</p>
       </div>
-      <div className="songText">{song.text}</div>
+      <p className="songText">{song.text}</p>
+      {renderHLine()}
     </div>
   );
+};
+
+const renderHeader = () => {
+  return null;
 };
 
 const renderSongItems = () => {
   return songs.map((song) => songItem(song));
 };
 
+const renderHLine = () => {
+  return <div className="hz"></div>;
+};
+
 const App = () => {
   return (
     <div className="App">
-      <div className="header">This is a header</div>
+      {renderHeader()}
       {renderSongItems()}
     </div>
   );
