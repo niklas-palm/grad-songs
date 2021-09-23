@@ -20,6 +20,10 @@ const songs = [
 
       Han är Linde, Han är Palm
       Sång och toast, ja vilken ära!
+      Lyssna nu, ska ni få höra,
+      var alla nödutgångar är.
+      De är där, och där och där,
+      De är där, och där och dära,
       bla bla 
       `,
   },
@@ -88,7 +92,7 @@ const songs = [
       På STS, STS på examensfest
       Kom till nationen
       Blev mera taggad
-      På att få dricka massa sprit
+      På att få dricka mera sprit
 
       Vi drack up spriten
       Blev jättetaggad
